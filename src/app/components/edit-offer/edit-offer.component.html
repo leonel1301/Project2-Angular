@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="editOfferForm" (ngSubmit)="onFormSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input formControlName="title" matInput placeholder="Enter title" maxlength="60" required />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput formControlName="description" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Points</mat-label>
+        <input matInput formControlName="points" type="number" step="1.0" min="0" max="100" />
+        <mat-error *ngIf="editOfferForm.controls['points'].errors?.['required']">La calificación es requerida</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>BusinessId</mat-label>
+        <input matInput formControlName="businessId" type="number" min="0000" max="9999" />
+        <mat-error *ngIf="editOfferForm.controls['businessId'].errors?.['required']">El BusinessId es requerido</mat-error>
+      </mat-form-field>
+      <div class="buttons">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!editOfferForm.valid">Update</button>
+        <button mat-raised-button color="accent" routerLink="/admin/offers">Cancel</button>
+      </div>
+    </form>
+</div>

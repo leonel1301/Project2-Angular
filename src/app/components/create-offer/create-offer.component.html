@@ -1,0 +1,32 @@
+<div class="form-container">
+  <div mat-dialog-title class="title-container">
+    <h1>Offers Form</h1>
+  </div>
+  <form [formGroup]="createForm" (ngSubmit)="onFormSubmit()" class="form-content">
+    <h2 mat-dialog-title>{{ offerId ? 'Editar offer' : 'Agregar oferta' }}</h2>
+    <mat-dialog-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="description" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Points</mat-label>
+        <input matInput formControlName="rating" type="number" step="1.0" min="0" max="100" />
+        <mat-error *ngIf="createForm.controls['rating'].errors?.['required']">La calificación es requerida</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>BusinessId</mat-label>
+        <input matInput formControlName="businessId" type="number" min="0000" max="9999" /> <!-- Cambiado de 'year' a 'businessId' -->
+        <mat-error *ngIf="createForm.controls['businessId'].errors?.['required']">El BusinessId es requerido</mat-error> <!-- Cambiado de 'year' a 'businessId' -->
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">{{ offerId ? 'Actualizar' : 'Agregar' }}</button>
+    </mat-dialog-actions>
+  </form>
+</div>

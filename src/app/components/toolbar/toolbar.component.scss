@@ -1,0 +1,16 @@
+.mat-toolbar {
+    background-color: hsl(48, 90%, 54%);
+    font-weight: bold;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-toolbar span{
+    color: black;
+}
+
+.mat-toolbar a:hover{
+    color:adjust-hue($color: #000000, $degrees: 0);
+    text-decoration: none;
+}

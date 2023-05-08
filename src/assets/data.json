@@ -1,0 +1,53 @@
+{
+  "offers": [
+    {
+      "id": 3,
+      "title": "Rutina de ejercicios en casa",
+      "description": "Recibe una rutina de ejercicios personalizada para hacer en casa, diseñada por nuestros expertos en fitness.",
+      "points": 250,
+      "businessId": 1
+    },
+    {
+      "id": 5,
+      "title": "Clase de yoga virtual",
+      "description": "Participa en una clase de yoga en línea para mejorar tu flexibilidad y reducir el estrés.",
+      "points": 150,
+      "businessId": 3
+    },
+    {
+      "id": 6,
+      "title": "Acceso a plataforma de aprendizaje en línea",
+      "description": "Accede a una amplia variedad de cursos en línea sobre distintos temas para desarrollar tus habilidades.",
+      "points": 300,
+      "businessId": 4
+    },
+    {
+      "id": 7,
+      "title": "Descuento en productos de belleza",
+      "description": "Recibe un descuento especial en productos de belleza seleccionados de nuestra tienda en línea.",
+      "points": 100,
+      "businessId": 5
+    },
+    {
+      "title": "Suscripción a revista digital",
+      "description": "Obtén una suscripción gratuita de tres meses a nuestra revista digital sobre estilo de vida y bienestar.",
+      "points": 100,
+      "businessId": 6,
+      "id": 8
+    },
+    {
+      "title": "Suscripción a revista digital",
+      "description": "Obtén una suscripción gratuita de tres meses a nuestra revista digital sobre estilo de vida y bienestar.",
+      "points": 50,
+      "businessId": 6,
+      "id": 9
+    },
+    {
+      "title": "Descuentos en diamantes FreeFire",
+      "description": "Sube video bailando \"Vamonos de Fiesta a Factory\" 🥵",
+      "points": 70,
+      "businessId": 15,
+      "id": 10
+    }
+  ]
+}
